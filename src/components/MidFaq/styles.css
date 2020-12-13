@@ -10,7 +10,7 @@ html{
   font-family: 'Roboto' , sans-serif;
   font-size: 10px;
   box-sizing: border-box;
-  background-color: rgb(107, 195, 224);
+  
 }
 
 h1 {
@@ -40,6 +40,7 @@ section{
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.5rem;
+  
 }
 
 .accordion-item{

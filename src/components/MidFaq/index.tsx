@@ -4,24 +4,25 @@ import './styles.css'
 
 
 
-const MidFaq = () => <midfaq> 
-
-
-
+function MidFaq()   {
+    return (
+      
+      <>
+      
 <h1>FAQ</h1>
     <section>
-        <div class="container">            
-            <div class="accordion">
+        <div className="container">            
+            <div className="accordion">
                 
-                <div class="accordion-item" id="question1">
-                    <a class="accordion-link" href="#question1">
+                <div className="accordion-item" id="question1">
+                    <a className="accordion-link" href="#question1">
                         Que tipo de conexão eu preciso para usar Spotify?
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <i class="icon ion-md-arrow-dropup"></i>
+                        <i className="icon ion-md-arrow-dropdown"></i>
+                        <i className="icon ion-md-arrow-dropup"></i>
                     </a>
 
                     
-                    <div class="answer">
+                    <div className="answer">
                         <p>
                         Spotify pode usar qualquer conexão! Conexão mobile, ADSL, via modem cabeado... 
                         O recomendado é uma conexao de no mínimo 1MB ou maior, no entanto você pode usar o Spotify com 384 kbps 
@@ -30,13 +31,13 @@ const MidFaq = () => <midfaq>
                     </div>
                 </div>
                
-                <div class="accordion-item" id="question2">
-                    <a class="accordion-link" href="#question2">
+                <div className="accordion-item" id="question2">
+                    <a className="accordion-link" href="#question2">
                         O Spotify consegue reproduzir em uma conexão EDGE(2G, internet móvel)?
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <i class="icon ion-md-arrow-dropup"></i>
+                        <i className="icon ion-md-arrow-dropdown"></i>
+                        <i className="icon ion-md-arrow-dropup"></i>
                     </a>
-                    <div class="answer">
+                    <div className="answer">
                         <p>
                         Se você tiver uma conexão mínima de 160 kbps, sim. Mas fique ciente, a conexão deve ser 
                         de aproximadamente 200 kbps constantemente, menor que isso é impossivel o pré carregamento.
@@ -45,13 +46,13 @@ const MidFaq = () => <midfaq>
                 </div>
                 
 
-                <div class="accordion-item" id="question3">
-                    <a class="accordion-link" href="#question3">
+                <div className="accordion-item" id="question3">
+                    <a className="accordion-link" href="#question3">
                         Eu tenho internet limitada. Quanto de banda, especificamente, eu preciso para usar o Spotify?
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <i class="icon ion-md-arrow-dropup"></i>
+                        <i className="icon ion-md-arrow-dropdown"></i>
+                        <i className="icon ion-md-arrow-dropup"></i>
                     </a>
-                    <div class="answer">
+                    <div className="answer">
                         <p>
                         O Spotify nao usa mais conexão P2P, porém as músicas ainda sao as maiores consumidoras de dados. 
                         Para evitar o uso de dados, realize o download das faixas Offline(Premium) e pelo arquivo ou pelas configuraçoes habilite o modo Offline. 
@@ -64,13 +65,13 @@ const MidFaq = () => <midfaq>
                     </div>
                 </div>            
                 
-                <div class="accordion-item" id="question4">
-                    <a class="accordion-link" href="#question4">
+                <div className="accordion-item" id="question4">
+                    <a className="accordion-link" href="#question4">
                         Quanto de espaço eu preciso no meu armazenamento para minha playlist Offline?
-                        <i class="icon ion-md-arrow-dropdown"></i>
-                        <i class="icon ion-md-arrow-dropup"></i>
+                        <i className="icon ion-md-arrow-dropdown"></i>
+                        <i className="icon ion-md-arrow-dropup"></i>
                     </a>
-                    <div class="answer">
+                    <div className="answer">
                         <p>
                         Se você gosta de versoes radio edits, serao aproximadamente 8.5 GB para 1000 musicas. Basicamente 32GB serao necessarios se você for escutar 3333 musicas em 1 dia.
                         Um cartao de memoria maior tem um maior custo-beneficio se você levar em consideraçao o preço/espaço de armazenamento.
@@ -81,8 +82,16 @@ const MidFaq = () => <midfaq>
             </div>
         </div>
     </section>
+      
+      </>
+      
+        );
+  }
 
 
-</midfaq>
+
+
+
+
 
 export default MidFaq;

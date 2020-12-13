@@ -4,6 +4,8 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Faq from './pages/Faq';
+import Playlist from './components/Playlist';
+import AlbumList from './components/AlbumList';
 
 
 //arrumar a  pagina 404
@@ -13,6 +15,8 @@ const Routes = () => (
     <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/faq' component={Faq} />
+        <Route path='/albuns' component={AlbumList} />
+        <Route path='/playlist/:id' component={Playlist} />
         <Route component={Pagina404} />
     </Switch>
     </BrowserRouter>
